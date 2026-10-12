@@ -175,8 +175,7 @@ def generate_markdown_docs() -> str:
         docs.extend(generate_command_details(command))
 
     # Add help section
-    docs.append(
-        """
+    docs.append("""
 ## Using Help
 
 Each command supports the `--help` flag for detailed information:
@@ -185,8 +184,7 @@ Each command supports the `--help` flag for detailed information:
 helm values-manager --help
 helm values-manager <command> --help
 ```
-"""
-    )
+""")
 
     return "".join(docs)
 
